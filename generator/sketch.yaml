@@ -1,0 +1,25 @@
+profiles:
+  c3mini:
+    fqbn: esp32:esp32:esp32c3
+    platforms:
+      - platform: esp32:esp32
+    libraries:
+      - ESP32-TWAI-CAN (1.0.1)
+
+    port: /dev/ttyACM0
+    port_config:
+      baudrate: 115200
+
+  wroom:
+    fqbn: esp32:esp32:esp32
+    platforms:
+      - platform: esp32:esp32
+    libraries:
+
+    port: /dev/ttyUSB0
+    port_config:
+      baudrate: 115200
+
+
+default_profile: c3mini
+
